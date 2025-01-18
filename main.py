@@ -21,7 +21,7 @@ while running:
             running = False
 
     clock.tick(fps)
-    screen.fill(black)
+    screen.fill(red)
     pygame.display.flip()
 
 
