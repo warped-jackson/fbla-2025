@@ -22,11 +22,14 @@ class Game:
         #self.font = pygame.font.Font('Arial',32)
         self.running = True
 
+        self.character_spritesheet = Spritesheet('img/character.png')
+        self.terrain_spritesheet = Spritesheet('img/terrain.png')
+
 
 
     def new(self):
 
-        #  a new game starts
+        # a new game starts
         self.playing = True
 
 
@@ -55,6 +58,7 @@ class Game:
         self.all_sprites.draw(self.screen)
         self.clock.tick(FPS)
         pygame.display.update()
+
 
 
     def main(self):
