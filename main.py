@@ -25,7 +25,7 @@ class Game:
 
 
     def new(self):
-        self.createTilemap()
+
         # a new game starts
         self.playing = True
 
