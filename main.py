@@ -4,6 +4,17 @@ from config import *
 import sys
 
 class Game:
+    def createTilemap(self):
+        for i,row in enumerate(tilemap):
+            for j, column in enumerate(row):
+                if column == "B":
+                    Block(self,j,i)
+                if column == "P":
+                    Player(self,j,i)
+
+
+
+
     def __init__(self):
         pygame.init()
         self.screen = pygame.display. set_mode((WIN_WIDTH, WIN_HEIGHT))
@@ -11,16 +22,22 @@ class Game:
         #self.font = pygame.font.Font('Arial',32)
         self.running = True
 
+
+
     def new(self):
+        self.createTilemap()
         # a new game starts
         self.playing = True
+
 
         self.all_sprites = pygame.sprite.LayeredUpdates()
         self.blocks = pygame.sprite.LayeredUpdates()
         self.enemies = pygame.sprite.LayeredUpdates()
         self.attacks = pygame.sprite.LayeredUpdates()
 
-        Player(self, 2, 3)
+        self.createTilemap()
+
+
 
     def events(self):
         for event in pygame.event.get():
