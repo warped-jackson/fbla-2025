@@ -26,7 +26,7 @@ class Game:
 
     def new(self):
 
-        # a new game starts
+        #  a new game starts
         self.playing = True
 
 

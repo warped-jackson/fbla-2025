@@ -7,6 +7,7 @@ import random
 class Player(pygame.sprite.Sprite):
     def __init__(self, game, x, y):
 
+
         self.game = game
         self._layer = PLAYER_LAYER
         self.groups = self.game.all_sprites

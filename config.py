@@ -14,6 +14,7 @@ PLAYER_SPEED = 3
 RED = (255,0,0)
 BLACK = (0,0,0)
 BLUE = (0,0,255)
+
 tilemap = [
     'BBBBBBBB......BBBBBB',
     'B..................B',
