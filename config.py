@@ -4,8 +4,8 @@ TILESIZE = 32
 FPS = 60
 
 # Graphics layering
-PLAYER_LAYER = 2
-BLOCK_LAYER = 1
+PLAYER_LAYER = 3
+BLOCK_LAYER = 2
 GROUND_LAYER = 1
 
 # How fast the player moves
