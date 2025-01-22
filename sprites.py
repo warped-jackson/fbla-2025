@@ -4,6 +4,7 @@ from config import *
 import math
 import random
 
+
 class Spritesheet:
     def __init__(self,file):
         self.sheet = pygame.image.load(file).convert()
